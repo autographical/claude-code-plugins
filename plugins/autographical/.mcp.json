@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "autographical": {
+      "type": "http",
+      "url": "${AUTOGRAPHICAL_MCP_URL:-https://api.autographical.ai/mcp}",
+      "headers": {
+        "Authorization": "Bearer ${AUTOGRAPHICAL_API_KEY:-${user_config.api_key}}"
+      }
+    }
+  }
+}

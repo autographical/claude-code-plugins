@@ -1,0 +1,15 @@
+{
+  "name": "autographical-collect",
+  "description": "Collects Claude Code session activity for Autographical",
+  "author": {
+    "name": "Autographical"
+  },
+  "userConfig": {
+    "ingest_token": {
+      "title": "Ingest Token",
+      "description": "Your Autographical ingest token. Create a named token in your Autographical user settings.",
+      "type": "string",
+      "sensitive": true
+    }
+  }
+}
