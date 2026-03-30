@@ -1,0 +1,27 @@
+{
+  "name": "autographical",
+  "owner": {
+    "name": "Autographical",
+    "email": "hello@autographical.ai"
+  },
+  "plugins": [
+    {
+      "name": "autographical-collect",
+      "source": "./plugins/autographical-collect",
+      "description": "Collects your Claude Code session activity to Autographical",
+      "version": "0.30.0",
+      "author": {
+        "name": "Autographical"
+      }
+    },
+    {
+      "name": "autographical",
+      "source": "./plugins/autographical",
+      "description": "Gives Claude context on your activity (browsing, saves, AI chats, attention) from Autographical",
+      "version": "0.1.0",
+      "author": {
+        "name": "Autographical"
+      }
+    }
+  ]
+}
