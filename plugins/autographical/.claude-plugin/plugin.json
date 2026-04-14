@@ -3,13 +3,5 @@
   "description": "Provides user activity context (browsing, saves, AI chats, attention) from Autographical",
   "author": {
     "name": "Autographical"
-  },
-  "userConfig": {
-    "api_key": {
-      "title": "API Key",
-      "description": "Your Autographical API key. Create a named API key in your Autographical user settings.",
-      "type": "string",
-      "sensitive": true
-    }
   }
 }

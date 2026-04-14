@@ -18,7 +18,7 @@
       "name": "autographical",
       "source": "./plugins/autographical",
       "description": "Gives Claude context on your activity (browsing, saves, AI chats, attention) from Autographical",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "author": {
         "name": "Autographical"
       }

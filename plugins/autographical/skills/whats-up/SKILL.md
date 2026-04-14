@@ -1,23 +1,25 @@
 ---
-description: Fetch recent user activity (browsing, saves, AI chats, attention) from Autographical and summarize what the user has been working on. Use when starting a session, when the user wants to know what they've been researching, or to pick up where they left off.
+description: Fetch recent activity from Autographical and bring the user's context into the session. Use at the start of a session to catch up, or mid-session to refresh with the latest activity.
 ---
 
-# What's Up — Activity Summary
+# What's Up
 
-You have access to the user's activity history via the Autographical MCP server (browsing visits, page views, saves, AI chat conversations, focus/attention time). Use the MCP tools to fetch recent activity, then synthesize it into actionable context.
+Fetch recent activity from Autographical and present what's been happening. The activity stream includes everything the user has been doing — browsing, reading, saving, researching — as well as activity from AI sessions the user has been collaborating with. It's the full picture of human + AI work.
 
-## Steps
+## Data
 
 1. Call the `recent_activity` MCP tool to fetch recent sessions and top resources.
 
-2. If the user provided arguments via `$ARGUMENTS`, also call the `search` MCP tool with those arguments.
+2. If the user provided arguments via `$ARGUMENTS`, also call the `search` MCP tool with those arguments to narrow focus.
 
-3. Analyze the output and present:
-   - **Active threads**: Group sessions by topic/theme. Identify what the user has been researching or working on.
-   - **Momentum**: Which threads have the most recent activity or attention? What seems to be in-progress?
-   - **Suggestions**: Based on the activity pattern, suggest what to pick up next. Look for:
-     - Research that seems incomplete (few resources, short focus times)
-     - Topics with heavy recent attention (likely actively working on)
-     - Threads that were active but then dropped off (might want to revisit)
+3. If a session or resource looks particularly relevant, use `get_session` or `get_resource` to get more detail.
 
-4. Keep your summary concise — a few sentences per thread, not an exhaustive list of every URL.
+## Synthesis
+
+Lead with what you find interesting or notable. You have full latitude in how you read and present the data — don't follow a rigid template. Some things to surface:
+
+- Active threads and topics — what has the user been engaged with, and what have their AI collaborators been working on?
+- Momentum — where is attention concentrated? What's in-progress?
+- Recency and intensity — what's hot right now vs background threads?
+
+Keep it concise. A few sentences per thread, not an exhaustive list of URLs. The goal is to transfer context to you so the session can build from shared awareness.
