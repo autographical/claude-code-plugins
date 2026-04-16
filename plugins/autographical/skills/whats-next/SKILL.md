@@ -1,5 +1,5 @@
 ---
-description: Suggest what to work on next based on recent activity and current context. Use when the user is between tasks, at a decision point, or wants direction on where to focus.
+description: Suggest what to work on next based on recent activity and current context. Use when the user is between tasks, at a decision point, wants direction on where to focus, or asks what to do next.
 ---
 
 # What's Next

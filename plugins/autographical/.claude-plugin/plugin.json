@@ -1,6 +1,6 @@
 {
   "name": "autographical",
-  "description": "Provides user activity context (browsing, saves, AI chats, attention) from Autographical",
+  "description": "Provides user activity context (browsing, saves, AI sessions, attention) from Autographical",
   "author": {
     "name": "Autographical"
   }

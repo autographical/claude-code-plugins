@@ -1,5 +1,5 @@
 ---
-description: Fetch recent activity from Autographical and bring the user's context into the session. Use at the start of a session to catch up, or mid-session to refresh with the latest activity.
+description: Fetch recent activity from Autographical — what the user and their AI agents have been working on. Use when starting a session, when the user mentions recent activity, when the user alludes to what they were doing or looking at, or picking up where they left off. Also use when the conversation feels like a topic change or you could use more background context on the ask.
 ---
 
 # What's Up
